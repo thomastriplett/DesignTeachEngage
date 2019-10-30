@@ -1,0 +1,21 @@
+
+
+<html>
+<head>
+
+<script>
+document.domain = sessionStorage.getItem('domain');
+sessionStorage.setItem('submitted', 'true');
+console.log("Submitted: "+sessionStorage.getItem('submitted'));
+//window.location.href = sessionStorage.getItem('link');
+window.open(sessionStorage.getItem('link'), '_top');
+</script>
+<!--
+<META http-equiv="refresh" content="0;URL=https://wwwtest.designteachengage.wisc.edu/the-online-environment/sdc-overview/" target="_parent"> 
+-->
+</head>
+<body>
+
+
+</body>
+</html>

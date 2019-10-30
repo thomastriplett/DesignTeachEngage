@@ -1,0 +1,43 @@
+<!--
+https://wwwtest.designteachengage.wisc.edu/the-online-environment/sdc-overview
+https://docs.google.com/forms/d/e/1FAIpQLSesX3mGqxMtnrwb07COmq8HhqjfelhfPturGXHMR26yTrIbrA/formResponse?embedded=true
+C:\Users\ttriplett\Documents\iFrame.html
+https://courses.dcs.wisc.edu/design-teaching/registration/iFrame.html
+jsaction="click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef; 
+touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;"
+-->
+
+    <script type="text/javascript">
+ 
+    var link="https://wwwtest.designteachengage.wisc.edu/the-online-environment/sdc-overview";
+    sessionStorage.setItem("link",link);
+    </script>
+
+    <iframe name="hidden_iframe" id="hidden_iframe" src="iFrame.html" width="640" height="1057" frameborder="0" 
+    marginheight="0" marginwidth="0"
+    onload="console.log(document.documentElement.innerText);">
+    </iframe>
+
+    <script>
+    function myFunction() {
+        //var iframe = document.getElementById("hidden_iframe");
+        //console.log(submitted);
+        //console.log(Math.max(document.documentElement.clientHeight, window.innerHeight || 0));
+        /*
+        if(sessionStorage.getItem("submitted")){
+            submitted = sessionStorage.getItem("submitted");
+        }
+        */
+        //console.log(submitted);
+        if(document.documentElement.scrollHeight == document.documentElement.clientHeight){
+        console.log(link);
+        //window.location.href=link;
+        }
+        /*
+        else{
+            submitted=true;
+            sessionStorage.setItem("submitted",true);
+        }
+        */
+    }
+    </script>
